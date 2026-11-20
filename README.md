@@ -55,13 +55,13 @@
 * **CH3_幾何轉換**：涵蓋仿射變換（Affine Transformation：平移、旋轉、縮放、錯切）、透視變換（Perspective Transformation / Homography）與影像插值演算法（最近鄰、雙線性、雙三次插值）。
 * **CH4_影像數學運算**：實作影像加減乘除、Alpha 混合（Blending）、位元邏輯運算（AND、OR、XOR、NOT）以及 ROI（感興趣區域）遮罩（Masking）合成技術。
 * **CH5_閾值處理**：從全域固定閾值（Global Thresholding）、Otsu 大津演算法（自動尋找最佳雙峰閾值），進階至自適應局部閾值（Adaptive Thresholding）以克服不均勻光照問題。
-* **CH6_形態學**：基於集合論的二值與灰階影像處理，包含侵蝕（Erosion）、膨脹（Dilation）、開運算（Opening）、閉運算（Closing）、形態學梯度、頂帽（Top-hat）與黑帽（Black-hat）運算，用於去除雜訊與修補物件輪廓。
+* **CH6_形態學**：基於集合論的二值與灰階影像處理，包含侵蝕（Erosion）、膨脹（Dilation）、開運算（Opening）、閉運算（Closing）、梯度(Gradient)、頂帽（Top-hat）與黑帽（Black-hat）運算，用於去除雜訊與修補物件輪廓。
 
 ### 第三階段：空間域、頻率域與特徵提取（CH7 – CH11）
 進入經典影像處理核心，學習濾波降噪、邊緣輪廓分析與頻譜轉換。
-* **CH7_空間域濾波與降噪**：探討卷積（Convolution）與相關（Correlation）運算，實作線性濾波（均值、高斯模糊）與非線性濾波（中值濾波去除椒鹽雜訊、雙邊濾波 Bilateral Filter 保留邊緣細節）。
-* **CH8_邊緣偵測與影像梯度**：計算一階與二階空間導數，實作 Sobel、Scharr、Laplacian 運算子，並深入拆解 Canny 邊緣偵測器的多階段流程（高斯平滑、梯度計算、非極大值抑制 NMS、雙閾值滯後追蹤）。
-* **CH9_輪廓分析與形狀描述**：提取連通區域與階層輪廓，計算幾何特徵（面積、周長、質心、外接矩形、最小外接圓、凸包 Convex Hull）以及影像矩（Image Moments 與 Hu 不變矩）進行形狀比對。
+* **CH7_空間域濾波與降噪**：探討卷積（Convolution）與相關（Correlation）運算，實作線性濾波（均值、高斯模糊）與非線性濾波（中值濾波去除椒鹽雜訊、雙邊濾波 （Bilateral Filter ）保留邊緣細節）。
+* **CH8_邊緣偵測與影像梯度**：計算一階與二階空間導數，實作 Sobel、Scharr、Laplacian 運算子，並深入拆解 Canny 邊緣偵測器的多階段流程（高斯平滑、梯度計算、非極大值抑制（NMS）、雙閾值滯後追蹤）。
+* **CH9_輪廓分析與形狀描述**：提取連通區域與階層輪廓，計算幾何特徵（面積、周長、質心、外接矩形、最小外接圓、凸包 Convex Hull）以及影像矩（Image Moments 與 Hu 不變矩），以進行形狀比對。
 * **CH10_頻率域濾波與正交轉換**：透過二維離散傅立葉轉換（2D DFT / FFT）將影像從空間域轉換至頻率域，設計低通、高通、帶通與帶阻濾波器（處理週期性雜訊），並介紹離散餘弦轉換（DCT）。
 * **CH11_影像增強**：改善影像視覺對比度與動態範圍，包含伽瑪校正（Gamma Correction）、直方圖等化（Histogram Equalization）以及限制對比度自適應直方圖等化（CLAHE）。
 
@@ -71,7 +71,7 @@
 * **CH13_醫學影像分類**：針對醫學影像（如 X 光、眼底鏡、病理切片）低對比度與背景雜訊多的特性，透過 ROI 自動裁切與 CLAHE 對比度增強，並將其封裝至醫療深度學習框架 MONAI 中進行模型訓練，最後透過臨床評估指標（混淆矩陣、敏感度/特異度、ROC/AUC），完成端到端的智慧醫療分類實驗。
 * **CH14_物體偵測**：實作基於錨點（Anchor-based）與無錨點（Anchor-free）的現代偵測架構（如 YOLO 系列、DETR 系列），並實作非極大值抑制（NMS）與邊界框視覺化。
 * **CH15_影像分割**：從傳統分水嶺演算法（Watershed）與 GrabCut 互動式前景提取，過渡到語意分割（Semantic Segmentation）與實例分割（Instance Segmentation）的像素級分類實作。
-* **CH16_物體追蹤**：結合傳統光流法（Optical Flow，如 Lucas-Kanade）、卡爾曼濾波器（Kalman Filter）狀態預測，以及現代多目標追蹤（MOT，如 ByteTrack / DeepSORT 概念與 OpenCV Tracker API）實現動態視訊追蹤。
+* **CH16_物體追蹤**：結合傳統光流法（Optical Flow，如 Lucas-Kanade）、卡爾曼濾波器（Kalman Filter）的狀態預測，以及現代多目標追蹤（MOT，如 ByteTrack / DeepSORT 概念與 OpenCV Tracker API），實現動態視訊追蹤。
 
 ---
 

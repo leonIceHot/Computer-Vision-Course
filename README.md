@@ -67,7 +67,7 @@
 
 ### 第四階段：深度學習與高階視覺任務（CH12 – CH16）
 銜接現代 AI 視覺技術，利用 OpenCV 5.x 的深度學習推論引擎解決實際產業問題。
-* **CH12_深度學習**：掌握 OpenCV `dnn` 模組架構，學習載入 ONNX、PyTorch / TensorFlow 匯出模型，進行影像前處理（`blobFromImage`）、硬體後端加速（CUDA / OpenVINO）與推論效能優化。
+* **CH12_深度學習**：掌握 OpenCV `dnn` 模組架構，學習載入 ONNX、PyTorch 匯出模型，進行影像前處理（`blobFromImage`）、硬體後端加速（CUDA）與推論效能優化。
 * **CH13_醫學影像分類**：針對醫學影像（如 X 光、眼底鏡或病理切片）特性，結合前期學到的 CLAHE 增強與 ROI 裁切，建立端到端的影像分類實驗流程與評估指標（混淆矩陣、ROC/AUC）。
 * **CH14_物體偵測**：實作基於錨點（Anchor-based）與無錨點（Anchor-free）的現代偵測架構（如 YOLO 系列 ONNX 部署），並實作非極大值抑制（NMS）與邊界框視覺化。
 * **CH15_影像分割**：從傳統分水嶺演算法（Watershed）與 GrabCut 互動式前景提取，過渡到語意分割（Semantic Segmentation）與實例分割（Instance Segmentation）的像素級分類實作。

@@ -69,7 +69,7 @@
 銜接現代 AI 視覺技術，利用 OpenCV 5.x 的深度學習推論引擎解決實際產業問題。
 * **CH12_深度學習**：掌握 OpenCV `dnn` 模組架構，學習載入 ONNX、PyTorch 匯出模型，進行影像前處理（`blobFromImage`）、硬體後端加速（CUDA）與推論效能優化。
 * **CH13_醫學影像分類**：針對醫學影像（如 X 光、眼底鏡、病理切片）低對比度與背景雜訊多的特性，透過 ROI 自動裁切與 CLAHE 對比度增強，並將其封裝至醫療深度學習框架 MONAI 中進行模型訓練，最後透過臨床評估指標（混淆矩陣、敏感度/特異度、ROC/AUC），完成端到端的智慧醫療分類實驗。
-* **CH14_物體偵測**：實作基於錨點（Anchor-based）與無錨點（Anchor-free）的現代偵測架構（如 YOLO 系列 ONNX 部署），並實作非極大值抑制（NMS）與邊界框視覺化。
+* **CH14_物體偵測**：實作基於錨點（Anchor-based）與無錨點（Anchor-free）的現代偵測架構（如 YOLO 系列、DETR 系列、ONNX 部署），並實作非極大值抑制（NMS）與邊界框視覺化。
 * **CH15_影像分割**：從傳統分水嶺演算法（Watershed）與 GrabCut 互動式前景提取，過渡到語意分割（Semantic Segmentation）與實例分割（Instance Segmentation）的像素級分類實作。
 * **CH16_物體追蹤**：結合傳統光流法（Optical Flow，如 Lucas-Kanade）、卡爾曼濾波器（Kalman Filter）狀態預測，以及現代多目標追蹤（MOT，如 ByteTrack / DeepSORT 概念與 OpenCV Tracker API）實現動態視訊追蹤。
 

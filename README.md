@@ -1,6 +1,6 @@
 # Computer-Vision-Course
 ---------------------------------------------------------------------------------------------------------
-- Editor Information
+# Editor Information
  - Ph.D. Student, Ching-Hung Wang (王清弘)
  - Graduate Institute, Prospective Technology of Electrical Engineering and Computer Science
  - National Chin-Yi University of Technology (NCUT)

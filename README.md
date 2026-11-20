@@ -1,1 +1,108 @@
 # Computer-Vision-Course
+# 二維電腦視覺實驗教材（基於 OpenCV 5.x）
+
+本教材專為 **二維電腦視覺（2D Computer Vision）** 課程設計，採用 **OpenCV 5.x** 進行編制。內容涵蓋從「數位影像底層原理」到「傳統影像處理演算法」，並最終銜接至「現代深度學習視覺應用」的完整實作訓練。
+
+---
+
+## 一、 課程章節總覽
+
+本教材共包含 17 個核心實驗單元，依循由淺入深的學習路徑設計：
+
+* `CH0_影像繪製`
+* `CH0_OpenCV_Fundamentals`
+* `CH1_數位影像`
+* `CH2_色彩空間`
+* `CH3_幾何轉換`
+* `CH4_影像數學運算`
+* `CH5_閾值處理`
+* `CH6_形態學`
+* `CH7_空間域濾波與降噪`
+* `CH8_邊緣偵測與影像梯度`
+* `CH9_輪廓分析與形狀描述`
+* `CH10_頻率域濾波與正交轉換`
+* `CH11_影像增強`
+* `CH12_深度學習`
+* `CH13_醫學影像分類`
+* `CH14_物體偵測`
+* `CH15_影像分割`
+* `CH16_物體追蹤`
+
+---
+
+## 二、 教材架構與四大學習階段
+
+本教材結合經典電腦視覺理論與 OpenCV 5.x 的最新 API 特性（包含強化的 `cv.dnn` 模組、現代化 G-API 管線加速，以及更完善的型別與硬體抽象支援），將所有章節劃分為以下四大教學階段：
+
+### 第一階段：基礎入門與數位影像本質（CH0 – CH2）
+建立開發環境與資料結構認知，理解電腦如何「看見」並儲存視覺資訊。
+* **CH0_影像繪製 & CH0_OpenCV_Fundamentals**：熟悉 OpenCV 5.x 環境配置、基本 I/O 讀寫、事件迴圈與向量圖形繪製（線條、幾何圖形、文字標註），作為後續演算法結果視覺化的基礎。
+* **CH1_數位影像**：探討取樣（Sampling）與量化（Quantization）、像素矩陣結構（NumPy 與 `cv.Mat` 的記憶體對應）、位元深度及空間解析度對影像品質的影響。
+* **CH2_色彩空間**：解析人眼視覺與硬體顯示差異，實作 BGR、RGB、HSV、Lab、YCbCr 等色彩空間轉換，並應用於特定顏色物件提取與光照不變性處理。
+
+### 第二階段：幾何與像素級基礎運算（CH3 – CH6）
+針對單張或多張影像進行空間座標變換與像素集合邏輯操作。
+* **CH3_幾何轉換**：涵蓋仿射變換（Affine Transformation：平移、旋轉、縮放、錯切）、透視變換（Perspective Transformation / Homography）與影像插值演算法（最近鄰、雙線性、雙三次插值）。
+* **CH4_影像數學運算**：實作影像加減乘除、Alpha 混合（Blending）、位元邏輯運算（AND、OR、XOR、NOT）以及 ROI（感興趣區域）遮罩（Masking）合成技術。
+* **CH5_閾值處理**：從全域固定閾值（Global Thresholding）、Otsu 大津演算法（自動尋找最佳雙峰閾值），進階至自適應局部閾值（Adaptive Thresholding）以克服不均勻光照問題。
+* **CH6_形態學**：基於集合論的二值與灰階影像處理，包含侵蝕（Erosion）、膨脹（Dilation）、開運算（Opening）、閉運算（Closing）、形態學梯度、頂帽（Top-hat）與黑帽（Black-hat）運算，用於去除雜訊與修補物件輪廓。
+
+### 第三階段：空間域、頻率域與特徵提取（CH7 – CH11）
+進入經典影像處理核心，學習濾波降噪、邊緣輪廓分析與頻譜轉換。
+* **CH7_空間域濾波與降噪**：探討卷積（Convolution）與相關（Correlation）運算，實作線性濾波（均值、高斯模糊）與非線性濾波（中值濾波去除椒鹽雜訊、雙邊濾波 Bilateral Filter 保留邊緣細節）。
+* **CH8_邊緣偵測與影像梯度**：計算一階與二階空間導數，實作 Sobel、Scharr、Laplacian 運算子，並深入拆解 Canny 邊緣偵測器的多階段流程（高斯平滑、梯度計算、非極大值抑制 NMS、雙閾值滯後追蹤）。
+* **CH9_輪廓分析與形狀描述**：提取連通區域與階層輪廓，計算幾何特徵（面積、周長、質心、外接矩形、最小外接圓、凸包 Convex Hull）以及影像矩（Image Moments 與 Hu 不變矩）進行形狀比對。
+* **CH10_頻率域濾波與正交轉換**：透過二維離散傅立葉轉換（2D DFT / FFT）將影像從空間域轉換至頻率域，設計低通、高通、帶通與帶阻濾波器（處理週期性雜訊），並介紹離散餘弦轉換（DCT）。
+* **CH11_影像增強**：改善影像視覺對比度與動態範圍，包含伽瑪校正（Gamma Correction）、直方圖等化（Histogram Equalization）以及限制對比度自適應直方圖等化（CLAHE）。
+
+### 第四階段：深度學習與高階視覺任務（CH12 – CH16）
+銜接現代 AI 視覺技術，利用 OpenCV 5.x 的深度學習推論引擎解決實際產業問題。
+* **CH12_深度學習**：掌握 OpenCV `dnn` 模組架構，學習載入 ONNX、PyTorch / TensorFlow 匯出模型，進行影像前處理（`blobFromImage`）、硬體後端加速（CUDA / OpenVINO）與推論效能優化。
+* **CH13_醫學影像分類**：針對醫學影像（如 X 光、眼底鏡或病理切片）特性，結合前期學到的 CLAHE 增強與 ROI 裁切，建立端到端的影像分類實驗流程與評估指標（混淆矩陣、ROC/AUC）。
+* **CH14_物體偵測**：實作基於錨點（Anchor-based）與無錨點（Anchor-free）的現代偵測架構（如 YOLO 系列 ONNX 部署），並實作非極大值抑制（NMS）與邊界框視覺化。
+* **CH15_影像分割**：從傳統分水嶺演算法（Watershed）與 GrabCut 互動式前景提取，過渡到語意分割（Semantic Segmentation）與實例分割（Instance Segmentation）的像素級分類實作。
+* **CH16_物體追蹤**：結合傳統光流法（Optical Flow，如 Lucas-Kanade）、卡爾曼濾波器（Kalman Filter）狀態預測，以及現代多目標追蹤（MOT，如 ByteTrack / DeepSORT 概念與 OpenCV Tracker API）實現動態視訊追蹤。
+
+---
+
+## 三、 實驗單元編排規範
+
+為確保各章節檔案（建議採用 Jupyter Notebook `.ipynb` 格式）具備高度一致性與教學成效，每個實驗單元皆遵循以下標準結構：
+
+| 單元區塊 | 教學目標與內容規範 |
+| :--- | :--- |
+| **1. 實驗目標 (Objectives)** | 條列本單元結束後學生應掌握的數學概念與 OpenCV 函式庫操作能力。 |
+| **2. 核心理論與數學模型 (Theory)** | 精簡扼要推導核心公式（對照參考書目章節），搭配訊號與矩陣示意說明。 |
+| **3. OpenCV 5.x 核心 API 解析** | 列出關鍵函式簽章（Signature）、參數意義、資料型別限制（如 `uint8` 與 `float32` 轉換陷阱）及版本更新注意事項。 |
+| **4. 漸進式實作範例 (Guided Lab)** | 提供完整可執行的 Python 程式碼，包含標準測試影像載入、演算法執行與並列對比視覺化（Matplotlib / OpenCV GUI）。 |
+| **5. 動手挑戰與參數調校 (Challenges)** | 設計 2–3 個開放式實作任務（例如：在強雜訊下調整 Canny 雙閾值，或結合形態學解決黏連物體計數），培養解決實際問題的能力。 |
+
+---
+
+## 四、 教學環境配置建議
+
+* **程式語言**：Python 3.10 或以上版本
+* **核心套件**：
+  * `opencv-python` / `opencv-contrib-python` (5.x 版本)
+  * `numpy`
+  * `matplotlib`
+  * `scipy`
+  * `onnxruntime`
+* **開發介面**：JupyterLab 或 VS Code（支援互動式影像檢視與 Markdown 筆記整合）
+
+---
+
+## 五、 實用與參考資源
+
+### 線上官方資源
+* 📖 [OpenCV 5.0 官方文檔](https://docs.opencv.org/5.0)
+
+### 參考書目
+1. Rafael C. Gonzalez, Richard E. Woods (2017). *Digital Image Processing* (4th ed.). Pearson FT Press.
+2. Davies, E. R. (2017). *Computer Vision: Principles, Algorithms, Applications, Learning* (5th ed.). Academic Press.
+3. Tyler, Christopher W. (2019). *Computer Vision: From Surfaces to 3D Objects*. CRC Press.
+4. Szeliski, R. (2022). *Computer Vision: Algorithms and Applications* (2nd ed.). Springer.
+5. Zhang, Y. J. (2022). *2-D Computer Vision: Principles, Algorithms and Applications*. World Scientific Pub.
+6. Zhang, Y. J. (2023). *3-D Computer Vision: Principles, Algorithms and Applications*. Springer.
+7. Torralba, A., Isola, P., & Freeman, W. T. (2024). *Foundations of Computer Vision*. MIT Press.
+8. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.

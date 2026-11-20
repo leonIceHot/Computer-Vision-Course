@@ -1,10 +1,11 @@
 # Computer-Vision-Course
-----------------------------------------------------------------------------------
-Ph.D. Student, Ching-Hung Wang (王清弘)
-Graduate Institute, Prospective Technology of Electrical Engineering and Computer Science
-National Chin-Yi University of Technology (NCUT)
-Email: chwang@gm.student.ncut.edu.tw
-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+- Editor Information
+ - Ph.D. Student, Ching-Hung Wang (王清弘)
+ - Graduate Institute, Prospective Technology of Electrical Engineering and Computer Science
+ - National Chin-Yi University of Technology (NCUT)
+ - Email: chwang@gm.student.ncut.edu.tw
+---------------------------------------------------------------------------------------------------------
 # 二維電腦視覺實驗教材（基於 OpenCV 5.x）
 
 本教材專為 **二維電腦視覺（2D Computer Vision）** 課程設計，採用 **OpenCV 5.x** 進行編制。內容涵蓋從「數位影像底層原理」到「傳統影像處理演算法」，並最終銜接至「現代深度學習視覺應用」的完整實作訓練。

@@ -6,6 +6,7 @@
  - National Chin-Yi University of Technology (NCUT)
  - Email: chwang@gm.student.ncut.edu.tw
 ---------------------------------------------------------------------------------------------------------
+
 # 二維電腦視覺實驗教材（基於 OpenCV 5.x）
 
 在人工智慧技術狂飆突進的時代，電腦視覺（Computer Vision）作為機器感知真實世界的基石，其教學模式正迎來前所未有的變革。過去的大學部電腦視覺課程，往往在「繁瑣的底層數學推導」與「零碎的語法除錯」之間掙扎，導致學生容易迷失於程式碼的細節，而忽略了演算法背後的物理意義與幾何直覺。
@@ -97,7 +98,10 @@
   * `matplotlib`
   * `scipy`
   * `onnxruntime`
-* **開發介面**：JupyterLab 或 VS Code（支援互動式影像檢視與 Markdown 筆記整合）
+* **開發介面**：
+  * `JupyterLab`
+  * `VS Code`
+  * `PyCharm`
 
 ---
 

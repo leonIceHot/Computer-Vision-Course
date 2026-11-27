@@ -57,7 +57,7 @@
 * **CH5_閾值處理**：從全域固定閾值（Global Thresholding）、Otsu 大津演算法（自動尋找最佳雙峰閾值），進階至自適應局部閾值（Adaptive Thresholding）以克服不均勻光照問題。
 * **CH6_形態學**：基於集合論的二值與灰階影像處理，包含侵蝕（Erosion）、膨脹（Dilation）、開運算（Opening）、閉運算（Closing）、梯度(Gradient)、頂帽（Top-hat）與黑帽（Black-hat）運算，用於去除雜訊與修補物件輪廓。
 
-### 第三階段：空間域、頻率域與特徵提取（CH7 – CH11）
+### 第三階段：從空間域轉換至頻率域（CH7 – CH11）
 進入經典影像處理核心，學習濾波降噪、邊緣輪廓分析與頻譜轉換。
 * **CH7_空間域濾波與降噪**：探討卷積（Convolution）與相關（Correlation）運算，實作線性濾波（均值、高斯模糊）與非線性濾波（中值濾波去除椒鹽雜訊、雙邊濾波 （Bilateral Filter ）保留邊緣細節）。
 * **CH8_邊緣偵測與影像梯度**：計算一階與二階空間導數，實作 Sobel、Scharr、Laplacian 運算子，並深入拆解 Canny 邊緣偵測器的多階段流程（高斯平滑、梯度計算、非極大值抑制（NMS）、雙閾值滯後追蹤）。

@@ -82,7 +82,7 @@
 * **CH17_相機校正與 3D 立體視覺**：探討針孔相機模型、內外參數矩陣與鏡頭畸變校正（張正友校正法），並實作特徵點匹配（ORB / SIFT）、全景影像拼接（Image Stitching）與雙目立體視覺（Stereo Vision）視差圖及深度估計。
 * **CH18_視覺基礎模型與多模態整合**：學習如何將 OpenCV 的影像前後處理流程與視覺基礎模型（Vision Foundation Models）無縫串接。課程內容涵蓋零樣本萬物分割（SAM 系列）、開放詞彙物體偵測（Open-Vocabulary Detection）以及視覺語言模型（VLM）的實戰應用；透過結合文字提示（Prompt）與自動化標註管線，大幅降低傳統人工標註資料的成本，賦予視覺系統更彈性的語意理解與泛化能力。
 * **CH19_邊緣運算與推論效能優化**：聚焦於電腦視覺模型在邊緣端落地時所面臨的即時性與低延遲挑戰，突破硬體算力與記憶體瓶頸。涵蓋低位元模型量化技術（FP32 / INT8 / INT4），並針對 CPU、GPU 與 NPU 運算架構，深入整合 ONNX Runtime、TensorRT 與 TFLite 等跨硬體推論加速引擎；同時透過實作多執行緒非同步視訊串流架構與記憶體零拷貝（Zero-Copy）效能調校，全面消除 I/O 等待延遲，打造兼顧辨識精度與高幀率（FPS）的即時推論核心。
-* **CH20_視覺系統部署與工程化**：本單元聚焦於從「演算法原型」邁向「正式產線系統」的軟體工程實務，完成 AI 視覺落地的最後一哩路。將視覺演算法封裝為高併發（Concurrency）、可上線的微服務架構，並實作 Docker 容器化環境建置與 GPU 資源排程；同時建立完善的異常容錯機制與推論日誌監控系統，確保產業級視覺服務在長期運作下具備高穩定性、可維護性與擴展能力。
+* **CH20_視覺系統部署與工程化**：本單元聚焦於從「演算法原型」邁向「正式產線系統」的工程實務，完成 AI 視覺落地的最後一哩路。內容涵蓋透過 Ray / Spark 實現分散式資料與模型平行訓練，並結合動態批次處理與專用推論伺服器（如 Triton）打造高併發（Concurrency）、高吞吐的微服務架構；同時導入 Docker、Kubernetes、Terraform 與 CI/CD 等 MLOps 雲端原生基礎設施，搭配資料與特徵版本控管、GPU 資源排程、異常容錯與線上日誌監控，確保產業級視覺服務在長期運作下具備高穩定性、可重現性與擴展能力。
 
 ### 第六階段：跨領域產業專題實戰（CH21 – CH25）
 整合前五階段的傳統影像處理、深度學習推論、3D 視覺與邊緣部署技術，針對四大主流產業場景，完成從需求定義、演算法串接、效能調校到介面封裝的端到端（End-to-End）專案開發。
@@ -139,7 +139,15 @@
 2. Davies, E. R. (2017). *Computer Vision: Principles, Algorithms, Applications, Learning* (5th ed.). Academic Press.
 3. Tyler, Christopher W. (2019). *Computer Vision: From Surfaces to 3D Objects*. CRC Press.
 4. Szeliski, R. (2022). *Computer Vision: Algorithms and Applications* (2nd ed.). Springer.
-5. Zhang, Y. J. (2022). *2-D Computer Vision: Principles, Algorithms and Applications*. World Scientific Pub.
-6. Zhang, Y. J. (2023). *3-D Computer Vision: Principles, Algorithms and Applications*. Springer.
-7. Torralba, A., Isola, P., & Freeman, W. T. (2024). *Foundations of Computer Vision*. MIT Press.
-8. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
+   https://link.springer.com/book/10.1007/978-3-030-34372-9
+6. Zhang, Y. J. (2022). *2-D Computer Vision: Principles, Algorithms and Applications*. World Scientific Pub.
+7. Zhang, Y. J. (2023). *3-D Computer Vision: Principles, Algorithms and Applications*. Springer.
+   https://link.springer.com/book/10.1007/978-981-19-7580-6
+8. Torralba, A., Isola, P., & Freeman, W. T. (2024). *Foundations of Computer Vision*. MIT Press.
+9. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
+10. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
+   https://mlsysbook.ai/vol1/
+11. Vijay Janapa Reddi (2027). *Scaling Machine Learning Systems*. The MIT Press
+
+
+

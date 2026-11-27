@@ -165,7 +165,7 @@
    - https://visionbook.mit.edu/
 10. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
 11. Machine Learning Systems
-    https://github.com/harvard-edge/cs249r_book
+    - https://github.com/harvard-edge/cs249r_book
 12. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
     - https://mlsysbook.ai/vol1/
 13. Vijay Janapa Reddi (2027). *Scaling Machine Learning Systems*. The MIT Press

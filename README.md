@@ -139,15 +139,15 @@
 2. Davies, E. R. (2017). *Computer Vision: Principles, Algorithms, Applications, Learning* (5th ed.). Academic Press.
 3. Tyler, Christopher W. (2019). *Computer Vision: From Surfaces to 3D Objects*. CRC Press.
 4. Szeliski, R. (2022). *Computer Vision: Algorithms and Applications* (2nd ed.). Springer.
-   https://link.springer.com/book/10.1007/978-3-030-34372-9
+   - https://link.springer.com/book/10.1007/978-3-030-34372-9
 6. Zhang, Y. J. (2022). *2-D Computer Vision: Principles, Algorithms and Applications*. World Scientific Pub.
 7. Zhang, Y. J. (2023). *3-D Computer Vision: Principles, Algorithms and Applications*. Springer.
-   https://link.springer.com/book/10.1007/978-981-19-7580-6
+   - https://link.springer.com/book/10.1007/978-981-19-7580-6
 8. Torralba, A., Isola, P., & Freeman, W. T. (2024). *Foundations of Computer Vision*. MIT Press.
 9. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
 10. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
-   https://mlsysbook.ai/vol1/
+    - https://mlsysbook.ai/vol1/
 11. Vijay Janapa Reddi (2027). *Scaling Machine Learning Systems*. The MIT Press
-
+    -  https://mlsysbook.ai/vol2/
 
 

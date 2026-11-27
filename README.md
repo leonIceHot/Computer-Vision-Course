@@ -73,7 +73,7 @@
 * **CH15_影像分割**：從傳統分水嶺演算法（Watershed）與 GrabCut 互動式前景提取，過渡到語意分割（Semantic Segmentation）與實例分割（Instance Segmentation）的像素級分割實作。
 * **CH16_物體追蹤**：結合傳統光流法（Optical Flow，如 Lucas-Kanade）、卡爾曼濾波器（Kalman Filter）的狀態預測，以及現代多目標追蹤（MOT，如 ByteTrack / DeepSORT 概念與 OpenCV Tracker API），實現動態視訊追蹤。
 
-**第五階段：3D 幾何視覺、基礎模型與產業級系統部署（CH17 – CH20）**
+### 第五階段：3D 幾何視覺、基礎模型與產業級系統部署（CH17 – CH20）
 從二維平面跨足三維空間感知，並整合最新多模態視覺基礎模型與邊緣運算加速技術，完成從演算法驗證到實際產線落地的最後一哩路。
 * **CH17_相機校正與 3D 立體視覺**：探討針孔相機模型、內外參數矩陣與鏡頭畸變校正（張正友校正法），並實作特徵點匹配（ORB / SIFT）、全景影像拼接（Image Stitching）與雙目立體視覺（Stereo Vision）視差圖及深度估計。
 * **CH18_視覺基礎模型與多模態整合**：結合 OpenCV 影像前處理與現代大型視覺模型，實作零樣本萬物分割（SAM 系列）、開放詞彙物體偵測（Open-Vocabulary Detection）以及視覺語言模型（VLM）的自動化影像理解與標註流程。

@@ -39,9 +39,9 @@
 
 ---
 
-## 二、 教材架構與六大學習階段
+## 二、 教材架構與七大學習階段
 
-本教材結合經典電腦視覺理論與 OpenCV 5.x 的最新 API 特性（包含強化的 `cv.dnn` 模組、現代化 G-API 管線加速，以及更完善的型別與硬體抽象支援），將所有章節劃分為以下六大教學階段：
+本教材結合經典電腦視覺理論與 OpenCV 5.x 的最新 API 特性（包含強化的 `cv.dnn` 模組、現代化 G-API 管線加速，以及更完善的型別與硬體抽象支援），將所有章節劃分為以下七大教學階段：
 
 ### 第一階段：基礎入門與數位影像本質（CH0 – CH2）
 建立開發環境與資料結構認知，理解電腦如何「看見」並儲存視覺資訊。
@@ -164,9 +164,11 @@
 8. Torralba, A., Isola, P., & Freeman, W. T. (2024). *Foundations of Computer Vision*. MIT Press.
    - https://visionbook.mit.edu/
 10. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
-11. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
+11. Machine Learning Systems
+    https://github.com/harvard-edge/cs249r_book
+12. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
     - https://mlsysbook.ai/vol1/
-12. Vijay Janapa Reddi (2027). *Scaling Machine Learning Systems*. The MIT Press
+13. Vijay Janapa Reddi (2027). *Scaling Machine Learning Systems*. The MIT Press
     -  https://mlsysbook.ai/vol2/
 
 

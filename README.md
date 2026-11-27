@@ -159,7 +159,7 @@
 8. Torralba, A., Isola, P., & Freeman, W. T. (2024). *Foundations of Computer Vision*. MIT Press.
    - https://visionbook.mit.edu/
 10. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
-11. Machine Learning Systems
+11. Machine Learning Systems: Foundations, Scaling, Agentic AI, and Physical AI 
     - https://github.com/harvard-edge/cs249r_book
 12. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
     - https://mlsysbook.ai/vol1/

@@ -144,10 +144,11 @@
 7. Zhang, Y. J. (2023). *3-D Computer Vision: Principles, Algorithms and Applications*. Springer.
    - https://link.springer.com/book/10.1007/978-981-19-7580-6
 8. Torralba, A., Isola, P., & Freeman, W. T. (2024). *Foundations of Computer Vision*. MIT Press.
-9. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
-10. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
+   - https://visionbook.mit.edu/
+10. Nixon, M., & Aguado, A. S. (2025). *Feature Extraction and Image Processing for Computer Vision* (5th ed.). Academic Press.
+11. Vijay Janapa Reddi (2026). *Introduction to Machine Learning Systems*. The MIT Press
     - https://mlsysbook.ai/vol1/
-11. Vijay Janapa Reddi (2027). *Scaling Machine Learning Systems*. The MIT Press
+12. Vijay Janapa Reddi (2027). *Scaling Machine Learning Systems*. The MIT Press
     -  https://mlsysbook.ai/vol2/
 
 

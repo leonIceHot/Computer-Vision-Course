@@ -53,7 +53,7 @@
 ### 第二階段：幾何與像素級基礎運算（CH3 – CH6）
 針對單張或多張影像進行空間座標變換與像素集合邏輯操作。
 * **CH3_幾何轉換**：涵蓋仿射變換（Affine Transformation：平移、旋轉、縮放、錯切）、透視變換（Perspective Transformation / Homography）與影像插值演算法（最近鄰、雙線性、雙三次插值）。
-* **CH4_影像數學運算**：實作影像加減乘除、Alpha 混合（Blending）、位元邏輯運算（AND、OR、XOR、NOT）以及 ROI（感興趣區域）遮罩（Masking）合成技術。
+* **CH4_影像數學與邏輯運算**：實作影像加減乘除、Alpha 混合（Blending）、位元邏輯運算（AND、OR、XOR、NOT）以及 ROI（感興趣區域）遮罩（Masking）合成技術。
 * **CH5_閾值處理**：從全域固定閾值（Global Thresholding）、Otsu 大津演算法（自動尋找最佳雙峰閾值），進階至自適應局部閾值（Adaptive Thresholding）以克服不均勻光照問題。
 * **CH6_形態學**：基於集合論的二值與灰階影像處理，包含侵蝕（Erosion）、膨脹（Dilation）、開運算（Opening）、閉運算（Closing）、梯度(Gradient)、頂帽（Top-hat）與黑帽（Black-hat）運算，用於去除雜訊與修補物件輪廓。
 
